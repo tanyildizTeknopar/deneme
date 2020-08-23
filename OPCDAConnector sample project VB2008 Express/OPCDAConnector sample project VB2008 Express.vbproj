@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C98E898D-FA02-45D6-A734-591BD0BD92A6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>OPCDAConnector_sample_project_VB2008_Express.My.MyApplication</StartupObject>
+    <RootNamespace>OPCDAConnector_sample_project_VB2008_Express</RootNamespace>
+    <AssemblyName>OPCDAConnector sample project VB2008 Express</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>OPCDAConnector sample project VB2008 Express.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>OPCDAConnector sample project VB2008 Express.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GelecekOPCDAConnector, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmAsynchronousRead.Designer.vb">
+      <DependentUpon>frmAsynchronousRead.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAsynchronousRead.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAsynchronousWrite.Designer.vb">
+      <DependentUpon>frmAsynchronousWrite.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAsynchronousWrite.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConnectDataGrid.Designer.vb">
+      <DependentUpon>frmConnectDataGrid.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConnectDataGrid.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConnectingMultiItems.Designer.vb">
+      <DependentUpon>frmConnectingMultiItems.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConnectingMultiItems.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConnectSingle.Designer.vb">
+      <DependentUpon>frmConnectSingle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConnectSingle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.vb">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMonitoringMulti.Designer.vb">
+      <DependentUpon>frmMonitoringMulti.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMonitoringMulti.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMonitorSingle.Designer.vb">
+      <DependentUpon>frmMonitorSingle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMonitorSingle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRead.Designer.vb">
+      <DependentUpon>frmRead.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRead.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWrite.Designer.vb">
+      <DependentUpon>frmWrite.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWrite.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modLists.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmAsynchronousRead.resx">
+      <DependentUpon>frmAsynchronousRead.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAsynchronousWrite.resx">
+      <DependentUpon>frmAsynchronousWrite.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConnectDataGrid.resx">
+      <DependentUpon>frmConnectDataGrid.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConnectingMultiItems.resx">
+      <DependentUpon>frmConnectingMultiItems.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConnectSingle.resx">
+      <DependentUpon>frmConnectSingle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMonitoringMulti.resx">
+      <DependentUpon>frmMonitoringMulti.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMonitorSingle.resx">
+      <DependentUpon>frmMonitorSingle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRead.resx">
+      <DependentUpon>frmRead.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWrite.resx">
+      <DependentUpon>frmWrite.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
